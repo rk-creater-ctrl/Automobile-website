@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - ASHISH MOBILE SHOP</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body class="bg-gray-950 text-white">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full bg-gray-900 bg-opacity-90 shadow-md z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <h1 class="text-2xl font-bold text-yellow-400">ASHISH MOBILE SHOP</h1>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:block">
+        <ul class="flex space-x-6 text-white font-medium">
+          <li><a href="index.html" class="hover:text-yellow-400 transition">Home</a></li>
+          <li><a href="services.html" class="hover:text-yellow-400 transition">Services</a></li>
+          <li><a href="about.html" class="hover:text-yellow-400 transition">About Us</a></li>
+          <li><a href="contact.html" class="hover:text-yellow-400 transition">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hamburger -->
+      <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden bg-gray-800 md:hidden">
+      <ul class="flex flex-col text-white font-medium px-6 py-4 space-y-3">
+        <li><a href="index.html" class="hover:text-yellow-400 transition">Home</a></li>
+        <li><a href="services.html" class="hover:text-yellow-400 transition">Services</a></li>
+        <li><a href="about.html" class="hover:text-yellow-400 transition">About Us</a></li>
+        <li><a href="contact.html" class="hover:text-yellow-400 transition">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="pt-24"></div>
+
+  <!-- Hero -->
+  <section class="hero h-72 flex justify-center items-center text-center bg-cover bg-center relative"
+    style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475');">
+    <div class="absolute inset-0 bg-gray-900 bg-opacity-70"></div>
+    <div class="relative z-10">
+      <h1 data-aos="fade-down" class="text-4xl md:text-5xl font-bold text-yellow-400">About Us</h1>
+      <p data-aos="fade-up" class="mt-4 text-lg text-gray-200">Welcome to ASHISH MOBILE SHOP</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-16 px-6 md:px-20">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
+      <div data-aos="fade-right">
+        <img src="image1.jpg" alt="img1" class="w-[300px] h-[400px] object-cover rounded-xl shadow-lg mx-auto">
+      </div>
+
+      <div>
+        <h2 data-aos="fade-up" class="text-3xl font-bold mb-6 text-yellow-400">Our Story</h2>
+        <p data-aos="fade-up" class="text-gray-300 mb-6">
+          At <span class="text-blue-400 font-semibold">ASHISH MOBILE SHOP</span>, we specialize in 
+          mobile repair, electronics servicing, and selling the latest gadgets & accessories.
+          With years of experience, we’re trusted for quality, reliability, and affordability.
+        </p>
+        <p data-aos="fade-up" data-aos-delay="200" class="text-gray-300 mb-6">
+          Our goal is to provide the best solutions for mobile and electronics users — whether it’s
+          repairing devices, upgrading software, or offering the newest accessories.
+        </p>
+      </div>
+
+      <div data-aos="fade-left">
+        <img src="image2.jpg" alt="img2" class="w-[300px] h-[400px] object-cover rounded-xl shadow-lg mx-auto">
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="py-16 px-6 md:px-20 bg-gray-900">
+    <h2 data-aos="fade-left" class="text-3xl font-bold text-center mb-12 text-yellow-400">
+      Products We Sell
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div data-aos="zoom-in" class="bg-gray-800 p-6 rounded-2xl shadow-lg text-center">
+        <img src="IMG-20251003-WA0011.jpg" alt="Shop Products"
+             class="w-full h-80 object-cover rounded-lg mb-4">
+        <h3 class="text-lg font-semibold">Mobile Covers & Accessories</h3>
+        <p class="text-gray-400 text-sm">A wide variety of covers, chargers, cables, and accessories.</p>
+      </div>
+
+      <div data-aos="zoom-in" data-aos-delay="200" class="bg-gray-800 p-6 rounded-2xl shadow-lg text-center">
+        <img src="IMG-20251003-WA0014.jpg" alt="Mobile Phones"
+             class="w-full h-80 object-cover rounded-lg mb-4">
+        <h3 class="text-lg font-semibold">Smartphones & Gadgets</h3>
+        <p class="text-gray-400 text-sm">Latest mobiles, earphones, and smart gadgets available.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white mt-12">
+    <div class="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-bold mb-4">ASHISH MOBILE SHOP</h3>
+        <p class="text-gray-400">Providing reliable mobile and electronics repair services along with the best accessories in Mangawan.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+        <p>📍 Gurh Road, Mangawan, MP</p>
+        <p>📮 Pin Code: 486111</p>
+        <p>📞 +91 92296 16263</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-yellow-400">Facebook</a>
+          <a href="#" class="hover:text-yellow-400">Instagram</a>
+          <a href="#" class="hover:text-yellow-400">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-950 py-4 text-center text-gray-500">
+      © 2025 ASHISH MOBILE SHOP — All rights reserved |
+      Developed by <span class="text-yellow-400 font-semibold">Ritik Kushwaha</span>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Ashish Mobile Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body class="bg-gray-950 text-white">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full bg-gray-900 bg-opacity-90 shadow-md z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <h1 class="text-2xl font-bold text-yellow-400">ASHISH MOBILE SHOP</h1>
+
+      <nav class="hidden md:block">
+        <ul class="flex space-x-6 text-white font-medium">
+          <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
+          <li><a href="services.html" class="hover:text-yellow-400">Services</a></li>
+          <li><a href="about.html" class="hover:text-yellow-400">About Us</a></li>
+          <li><a href="contact.html" class="hover:text-yellow-400">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden bg-gray-800 md:hidden">
+      <ul class="flex flex-col text-white font-medium px-6 py-4 space-y-3">
+        <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
+        <li><a href="services.html" class="hover:text-yellow-400">Services</a></li>
+        <li><a href="about.html" class="hover:text-yellow-400">About Us</a></li>
+        <li><a href="contact.html" class="hover:text-yellow-400">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="pt-24"></div>
+
+  <!-- Hero -->
+  <section class="hero h-64 flex justify-center items-center text-center bg-cover bg-center relative"
+    style="background-image:url('https://images.unsplash.com/photo-1581091215367-59ab6a6b64dc');">
+    <div class="absolute inset-0 bg-gray-900 bg-opacity-70"></div>
+    <div class="relative z-10">
+      <h1 data-aos="fade-down" class="text-4xl md:text-5xl font-bold text-yellow-400">Contact Us</h1>
+      <p data-aos="fade-up" class="mt-4 text-lg text-gray-200">We’d love to hear from you</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="max-w-7xl mx-auto px-6 py-12">
+    <div class="grid md:grid-cols-2 gap-12">
+
+      <!-- Contact Form -->
+      <div class="bg-gray-800 p-8 rounded-2xl shadow-lg animate__animated animate__fadeInLeft">
+        <h3 class="text-2xl font-semibold mb-6 text-yellow-400">Send us a Message</h3>
+        
+        <!-- Replace YOUR_FORM_ID with your Formspree ID -->
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-4">
+          <div>
+            <label class="block mb-2">Name</label>
+            <input type="text" name="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" required>
+          </div>
+          <div>
+            <label class="block mb-2">Email</label>
+            <input type="email" name="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" required>
+          </div>
+          <div>
+            <label class="block mb-2">Message</label>
+            <textarea name="message" rows="5" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" required></textarea>
+          </div>
+          <button type="submit" class="bg-yellow-400 text-white px-6 py-2 rounded-lg hover:bg-yellow-500 transition">Send Message</button>
+        </form>
+        <p class="mt-4 text-sm text-gray-400">* Your message will be sent directly to our email.</p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="bg-gray-800 p-8 rounded-2xl shadow-lg animate__animated animate__fadeInRight">
+        <h3 class="text-2xl font-semibold mb-6 text-yellow-400">Get In Touch</h3>
+        <p class="mb-4"><strong>Address:</strong> Gurh Road, Mangawan, MP</p>
+        <p class="mb-4"><strong>Pin Code:</strong> 486111</p>
+        <p class="mb-4"><strong>Phone:</strong> +91 92296 16263</p>
+        <p class="mb-4"><strong>Email:</strong> Ashishmobile9229@gmail.com</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white mt-12">
+    <div class="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-bold mb-4">ASHISH MOBILE SHOP</h3>
+        <p class="text-gray-400">Providing reliable mobile and electronics repair services along with the best accessories in Mangawan.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+        <p>📍 Gurh Road, Mangawan, MP</p>
+        <p>📮 Pin Code: 486111</p>
+        <p>📞 +91 92296 16263</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-yellow-400">Facebook</a>
+          <a href="#" class="hover:text-yellow-400">Instagram</a>
+          <a href="#" class="hover:text-yellow-400">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-950 py-4 text-center text-gray-500">
+      © 2025 ASHISH MOBILE SHOP — All rights reserved |
+      Developed by <span class="text-yellow-400 font-semibold">Ritik Kushwaha</span>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+</html>
